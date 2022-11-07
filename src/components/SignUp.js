@@ -15,7 +15,7 @@ import {
 function SignUp() {
   return (
     <MDBContainer fluid>
-      <MDBCard className="text-black m-5" style={{ borderRadius: "25px" }}>
+      <MDBCard className="text-start m-5" style={{ borderRadius: "25px" }}>
         <MDBCardBody>
           <MDBRow>
             <MDBCol
@@ -26,7 +26,7 @@ function SignUp() {
               {/* <p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
                 Sign up
               </p> */}
-              <h2 classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
+              <h2 classNAme="text-center fw-bold mb-5 mx-1 mx-md-4 mt-4">
                 Sign up
               </h2>
 
@@ -68,18 +68,18 @@ function SignUp() {
                 />
               </div>
 
-              <MDBBtn className="mb-4" size="lg">
+              <MDBBtn className="mb-4" size="md">
                 Register
               </MDBBtn>
             </MDBCol>
 
             <MDBCol
-              md="100"
+              md="10"
               lg="6"
               className="order-1 order-lg-2 d-flex align-items-center"
             >
               <MDBCardImage
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                src="https://i.pinimg.com/564x/40/b8/b4/40b8b4b42964d8884f7a0d3788469461.jpg"
                 fluid
               />
             </MDBCol>
