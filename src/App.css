@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #FAF7F0;
 }
 li, a, .btn{
   font-family: 'Montserrat', sans-serif;
@@ -12,6 +12,7 @@ li, a, .btn{
   text-decoration: none;
 } 
 .header{
+  position: sticky;  /* want to change to fixed */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,39 +55,12 @@ li, a, .btn{
   transition: all 0.3s ease 0s;
   border: #ffd445 solid 1.5px;
 }
-/* .contener {
-  margin: 0;
-  padding: 0;
-}
-.main{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  align-items: center; */
-  /* /* display: flex; 
-  flex-direction: column;
-  justify-content: space-between; */
-  /* background-image: linear-gradient(#f9f9f9, #f47373); */
-  /* width: 80%;
-  height: 70%;
-  position: absolute;
-  top: 100%;
-  left: 5%; */
-  /* margin-right: 0;
-  padding-right: 0;
-}
-.main-img { */
-  /* position: absolute; */
-  /* padding: 0; */
-  /* padding-top: 70px; */
-  /* margin-right: 3px; */
-  /* width: 80%;
-  float: left;
-}
-*/
+
 .cont{
-  margin-left: 8%;
-  margin-top: 15%; 
+  margin-left: 10%;
+  margin-top: 20%; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #611973;
 }
 
 .cont h1{
