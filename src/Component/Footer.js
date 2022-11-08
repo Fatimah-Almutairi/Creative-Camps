@@ -3,9 +3,9 @@ import {
     chakra,
     Container,
     Stack,
-    Text,
     useColorModeValue,
     VisuallyHidden,
+    Image,
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
@@ -43,7 +43,7 @@ import {
   
   export default function SmallWithSocial() {
     return (
-      <Box
+      <Box className='bootom '
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
@@ -54,7 +54,8 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Image   src='./IMG/logo.png' ></Image>
+          
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
