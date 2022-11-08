@@ -1,25 +1,15 @@
 import React from 'react'
-import { SimpleGrid, Box ,Center} from '@chakra-ui/react'
+import { SimpleGrid, Box , Image} from '@chakra-ui/react'
 
 function HomePage() {
   return (
     <div className='contener'>
-        <div className='main'>
-        <SimpleGrid columns={2} mr={0} pr={0}>
-            <div className='cont' w='500px' h='auto' >
+        <SimpleGrid columns={2}  pr={0} mr={0}>
+            <Box className='cont' height='80px'>
                 <h1>Title maybe name the website</h1>
-                <p>Some text here about the website or about the services</p></div>
-            <div w='500px' h='80px' className='main-img'>
-                <img src= 'main2.png'/></div>
+                <p>Some text here about the website or about the services</p></Box>
+            <Box  pr={0} mr={0}><Image src= 'main.png' pr={0} mr={0}/></Box>
         </SimpleGrid>
-
-            {/* <div className='cont' >
-            <h1>Title maybe name the website</h1>
-            <p>Some text here about the website or about the services</p>
-            </div>
-            <img src= 'main.png' className='main-img'/> */}
-
-        </div>
 
     </div>
   )
