@@ -1,28 +1,13 @@
+/* 
 
-body{
-margin: 0,0,0,0;
-
-}
-
-.container{
-  background: #F9F9F9;
-  width: 55%;
-  height: 70%;
-  display: grid;
-grid-template-columns: (2,1fr);
-
-}
 .IMG-1{
 height: 40%;
 width: 50%;
-margin: 10px 10px 10px 80px ;
-
 
 }
 .IMG-2{
   height: 40%;
   width: 30%;
-  gap: 30px;
   margin-left: 780px;
   
   
@@ -30,19 +15,30 @@ margin: 10px 10px 10px 80px ;
 .IMG-3{
   height: 40%;
   width: 30%;
-  gap: 30px;
 padding: 10px;
 }
 .IMG-4{
   height: 40%;
   width: 30%;
-  gap: 30px;
-margin-left: 800px;
+  
+margin-left: 800px; 
+} */
+/* img{
+width: 100%;
+height: auto;
+} */ 
 
+img{
+height: 300px;
+width: 400px;
 
 
 }
-.Text{
-margin: 10px 10px 40px 80px ;
-padding: 10px 50px 40px 150px ;
+.container{
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr   ;
+  gap: 2rem;
+  align-items: center;
 }
