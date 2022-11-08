@@ -8,13 +8,15 @@ margin: 0,0,0,0;
   background: #F9F9F9;
   width: 55%;
   height: 70%;
-  margin-left: 50px;
   display: grid;
+grid-template-columns: (2,1fr);
+
 }
 .IMG-1{
 height: 40%;
 width: 50%;
-padding: 10px;
+margin: 10px 10px 10px 80px ;
+
 
 }
 .IMG-2{
@@ -35,9 +37,12 @@ padding: 10px;
   height: 40%;
   width: 30%;
   gap: 30px;
-padding: 10px;
 margin-left: 800px;
 
 
 
+}
+.Text{
+margin: 10px 10px 40px 80px ;
+padding: 10px 50px 40px 150px ;
 }
