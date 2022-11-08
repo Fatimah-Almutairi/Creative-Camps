@@ -1,7 +1,11 @@
 import React from 'react'
 import { SimpleGrid, Box , Image} from '@chakra-ui/react'
+import {useState} from 'react';
+import Modal from './Modal';
 
 function HomePage() {
+    const [openModal, setOpen] = useState(false);
+
   return (
     <div>
         <SimpleGrid columns={2}  pr={0} mr={0}>
@@ -15,8 +19,26 @@ function HomePage() {
 
             <div className='container'>
                 <div className='card'>
-                    
+                    <button className='openModal' onClick={() => {
+                        setOpen(true)
+                    }}><img src='img1.png' className='img' /></button>
+                    <div className='card-title'>
+                        <h1>Spot Think</h1>
+                    </div>
                 </div>
+                <div className='card'>
+                   <button><img src='img2.png' className='img' /></button> 
+                    <div className='card-title'>
+                        <h1>Summer Club</h1>
+                    </div>
+                </div>
+                <div className='card'>
+                   <button> <img src='img3.png' className='img' /></button>
+                    <div className='card-title'>
+                        <h1>Kids In Nature</h1>
+                    </div>
+                </div>
+                {openModal && <Modal closeModal={setOpen} />}
             </div>
         </div>
 

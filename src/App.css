@@ -55,19 +55,63 @@ li, a, .btn{
   transition: all 0.3s ease 0s;
   border: #ffd445 solid 1.5px;
 }
-
 .cont{
   margin-left: 10%;
   margin-top: 20%; 
   font-family: Arial, Helvetica, sans-serif;
   color: #611973;
 }
-
 .cont h1{
   font-size: 50px; 
 }
-
-
 .cont p{ 
   font-size: 30px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+.mainprog{
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+  align-items: center;
+}
+.container {
+  display: flex;
+}
+.container-prog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card{
+  height: 500px;
+  margin: 30px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+.img{
+height: 500px;
+width: 350px;
+border-radius: 3px;
+}
+.card-title{
+  height: 50px;
+  width: 350px;
+  /* padding: 6px; */
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 95px;
+  /* background: rgb(27, 27, 27, .5); */
+  /* color: #fff; */
+}
+.card-title h1{
+  /* margin: 10px; */
+  font-size: 40px;
+  /* background; */
+  color: #fff;
+  background: rgb(27, 27, 27, .5);
+
 }
