@@ -9,7 +9,6 @@ function Home() {
   bgPosition="center"
   bgRepeat="no-repeat"
 />
-Pr
 
 
     </div>

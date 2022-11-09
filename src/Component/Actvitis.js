@@ -8,7 +8,7 @@ function Actvitis() {
     <div className='container'>
   <Image src='IMG/img-1.png' />
 
-<p className="Text"> Cooking with kids can encourage an interest in food, healthy eating habits and skills for life.
+<p> Cooking with kids can encourage an interest in food, healthy eating habits and skills for life.
 Short and simple cooking activities are great for young children.
 For older children, you can introduce more creative recipes and complex kitchen tasks.</p>
 

@@ -43,8 +43,8 @@ import {
   
   export default function SmallWithSocial() {
     return (
-      <Box className='bootom '
-        bg={useColorModeValue('gray.50', 'gray.900')}
+      <Box 
+        bg={useColorModeValue('#f9f9f9')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
