@@ -1,65 +1,90 @@
-import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBInput,
-  MDBIcon,
-  MDBCheckbox,
-} from "mdb-react-ui-kit";
+  Text,
+  Button,
+  Checkbox,
+  Flex,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input,
+  Link,
+  Stack,
+  Image,
+} from "@chakra-ui/react";
 
-function SignIn() {
+export default function SplitScreen() {
+  const [showPassword, setShowPassword] = useState("");
+  const [showEmail, setShowEmail] = useState("");
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    if (showEmail.length == "" || showPassword.length == "") {
+      alert("required");
+    } else if (showEmail.length == "" && showPassword.length == "") {
+      alert("required");
+    } else {
+      e.preventDefault();
+      setShowEmail(e.target.value);
+      setShowPassword(e.target.value);
+
+      navigate("/Home");
+    }
+  };
+
   return (
-    <MDBContainer fluid>
-      <MDBCard className="text-start m-5" style={{ borderRadius: "25px" }}>
-        <MDBCardBody>
-          <MDBRow>
-            <MDBCol
-              md="10"
-              lg="5"
-              className="order-2 order-lg-1 d-flex flex-column align-items-center"
+    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
+      <Flex p={8} flex={1} align={"center"} justify={"center"}>
+        <Stack spacing={4} w={"full"} maxW={"md"}>
+          <Heading fontSize={"2xl"}>Sign in to your account</Heading>
+          <FormControl id="email">
+            <FormLabel>Email address</FormLabel>
+            <Input
+              type="email"
+              onChange={(e) => {
+                setShowEmail(e.target.value);
+              }}
+            />
+          </FormControl>
+          <FormControl id="password">
+            <FormLabel>Password</FormLabel>
+            <Input
+              type="password"
+              onChange={(e) => {
+                setShowPassword(e.target.value);
+              }}
+            />
+          </FormControl>
+          <Stack spacing={6}>
+            <Stack
+              direction={{ base: "column", sm: "row" }}
+              align={"start"}
+              justify={"space-between"}
             >
-              {/* <p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
-                Sign up
-              </p> */}
-              <h2 classNAme="text-center fw-bold mb-5 mx-1 mx-md-4 mt-4">
-                Login
-              </h2>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                {/* <MDBIcon fas icon="envelope me-3" size="lg" /> */}
-                <MDBInput label="Your Email" id="form2 " type="email" />
-              </div>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                {/* <MDBIcon fas icon="lock me-3" size="lg" /> */}
-                <MDBInput label="Password" id="form3" type="password" />
-              </div>
-
-              <MDBBtn className="mb-4" size="lg">
-                Login
-              </MDBBtn>
-            </MDBCol>
-
-            <MDBCol
-              md="10"
-              lg="6"
-              className="order-1 order-lg-2 d-flex align-items-center"
+              <Checkbox>Remember me</Checkbox>
+              <Link color={"#611973"}>Forgot password?</Link>
+            </Stack>
+            <button
+              onClick={handleClick}
+              className="btn"
+              colorScheme={"blue"}
+              variant={"solid"}
             >
-              <MDBCardImage
-                src="https://i.pinimg.com/564x/40/b8/b4/40b8b4b42964d8884f7a0d3788469461.jpg"
-                fluid
-              />
-            </MDBCol>
-          </MDBRow>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBContainer>
+              Sign in
+            </button>
+            <Text align={"center"}>
+              Don't have an account?{" "}
+              <Link href="./SignUp" color={"#ffd445"}>
+                SignUp
+              </Link>
+            </Text>
+          </Stack>
+        </Stack>
+      </Flex>
+      <Flex flex={2}>
+        <Image alt={"Login Image"} objectFit={"cover"} src={"main.png"} />
+      </Flex>
+    </Stack>
   );
 }
-
-export default SignIn;

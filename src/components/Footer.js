@@ -1,3 +1,29 @@
+export default function Footer() {
+  return (
+    <>
+<footer class="footer-distributed">
+
+<div class="footer-right">  <p class="footer-links">
+    <a class="link-1" href="#"><img src="social1.png" /></a>
+    <a class="link-1" href="#"><img src="social2.png" /></a>
+    <a class="link-1" href="#"><img src="social3.png" /></a>
+
+  </p>
+
+</div>
+
+<div class="footer-left">
+<img src="logo.png" />
+{/* <p>© 2022 Creative Camps Team. All rights reserved</p> */}
+
+</div>
+
+</footer>
+        </>
+  );
+}
+
+
 // import {
 //   Box,
 //   chakra,
@@ -37,33 +63,33 @@
 //   );
 // };
 
-export default function Footer() {
-  // return (
-  //   <Box className='bootom '
-  //     bg={useColorModeValue('gray.50', 'gray.900')}
-  //     color={useColorModeValue('gray.700', 'gray.200')}>
-  //     <Container
-  //       as={Stack}
-  //       maxW={'6xl'}
-  //       py={4}
-  //       direction={{ base: 'column', md: 'row' }}
-  //       spacing={4}
-  //       justify={{ base: 'center', md: 'space-between' }}
-  //       align={{ base: 'center', md: 'center' }}>
-  //       <Image   src='logoo.png' ></Image>
+// export default function SmallWithSocial() {
+//   return (
+//     <Box 
+//       bg={useColorModeValue('#f9f9f9')}
+//       color={useColorModeValue('gray.700', 'gray.200')}>
+//       <Container
+//         as={Stack}
+//         maxW={'6xl'}
+//         py={4}
+//         direction={{ base: 'column', md: 'row' }}
+//         spacing={4}
+//         justify={{ base: 'center', md: 'space-between' }}
+//         align={{ base: 'center', md: 'center' }}>
+//         <Image   src='./IMG/logo.png' ></Image>
         
-  //       <Stack direction={'row'} spacing={6}>
-  //         <SocialButton label={'Twitter'} href={'#'}>
-  //           <FaTwitter />
-  //         </SocialButton>
-  //         <SocialButton label={'YouTube'} href={'#'}>
-  //           <FaYoutube />
-  //         </SocialButton>
-  //         <SocialButton label={'Instagram'} href={'#'}>
-  //           <FaInstagram />
-  //         </SocialButton>
-  //       </Stack>
-  //     </Container>
-  //   </Box>
-  // );
-}
+//         <Stack direction={'row'} spacing={6}>
+//           <SocialButton label={'Twitter'} href={'#'}>
+//             <FaTwitter />
+//           </SocialButton>
+//           <SocialButton label={'YouTube'} href={'#'}>
+//             <FaYoutube />
+//           </SocialButton>
+//           <SocialButton label={'Instagram'} href={'#'}>
+//             <FaInstagram />
+//           </SocialButton>
+//         </Stack>
+//       </Container>
+//     </Box>
+//   );
+// }

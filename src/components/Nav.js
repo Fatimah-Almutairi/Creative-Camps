@@ -7,13 +7,13 @@ function Nav() {
     // console.log('Hello');
   return (
     <div className='header'>
-        <Image className='logo' src='logo.png'/><a to='/HomePage'></a>
+        <Image className='logo' src='logo.png'/>
         <nav>
             <ul className='nav-link'>
                 {/* <h2>Hello</h2> */}
                 <li><Link to='/Programs'>Programs</Link></li>
                 <li><Link to='/Events'>Events</Link></li>
-                <li><Link to='/Activites'>Activites</Link></li>
+                <li><Link to="/About">About</Link></li>
                 <Link to='/SignIn'><button className='btn'>Sign In</button></Link>
 
             </ul>

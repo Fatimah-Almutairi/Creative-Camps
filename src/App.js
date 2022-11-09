@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import HomePage from './components/HomePage';
 import Programs from './components/Programs';
 import Events from './components/Events';
+import About from './components/About';
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 // import Activites from "./Activites";
 
 
@@ -22,7 +25,9 @@ function App() {
         <Route path="/HomePage" element={<HomePage />}></Route>
         <Route path="/Programs" element={<Programs />}></Route>
         <Route path="/Events" element={<Events />}></Route>
-        {/* <Route path="/Activites" element={<Activites />}></Route> */}
+        <Route path="/About" element={<About />}></Route>
+        <Route path="/SignIn" element={<SignIn />}></Route>
+        <Route path="/SignUp" element={<SignUp />}></Route>
       </Routes>
 
       <Footer />

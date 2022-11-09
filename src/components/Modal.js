@@ -1,21 +1,34 @@
 import React from "react";
 import "./Modal.css"
-function Modal({closeModal}) {
+import {Array} from './ProgramValue';
+
+function Modal({closeModal}, props) {
   return (
 
       <div className="modalBackground">
         <div className="modalContainer">
-          <button onClick={() => closeModal(false)} className='butto'>X</button>
-          <div className="modalTitle">
-            <h1>Title for Cards here!</h1>
+        <div className="modalTitle">
+        <button ><i class="fa-regular fa-heart"></i></button>
+          <button onClick={() => closeModal(false)} className='butto'><i class="fa-solid fa-xmark"></i></button>
+
           </div>
           <div className="modalBody">
-            <p>
-              the complete for body and descriptions about the program here...
-            </p>
+            {
+              Array.map( e => {
+                return (
+                  <>
+                  <h1>{e.Title}</h1>
+                  <p>{e.Description}</p>
+                  <p>{e.Age}</p>
+                  </>
+                )
+              })
+            }
+          {/* <h1>{props.Title}</h1>
+            <p>{props.description}</p> */}
           </div>
           <div className="modalFooter">
-            <button>Favorite</button>
+            {/* <button>Favorite</button> */}
             <button>Register</button>
           </div>
         </div>
