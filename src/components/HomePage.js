@@ -1,10 +1,12 @@
 import React from 'react'
-import { SimpleGrid, Box , Image,   Modal, ModalOverlay,
-    ModalContent, ModalHeader, ModalFooter, ModalBody,useDisclosure,
-    ModalCloseButton, Button} from '@chakra-ui/react'
+import { SimpleGrid, Box , Image} from '@chakra-ui/react'
+import {useState} from 'react'
+import Modal from './Modal' 
 
 function HomePage() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+
+          const [openModal, setOpen] = useState(false);
+
   return (
     <div>
         <SimpleGrid columns={2}  pr={0} mr={0}>
@@ -13,105 +15,45 @@ function HomePage() {
                 <p>"Help children dream and achieve theirs."</p></Box>
             <Box  pr={0} mr={0}><Image src= 'main.png' pr={0} mr={0}/></Box>
         </SimpleGrid>
+   <div className='main'>
+   {openModal && <Modal closeModal={setOpen} />}
+            <div className='container'>
+                <div className='card'>
+                    <button className='openModal' onClick={() => {
+                        setOpen(true)
+                    }}><img src='img12.png' className='img' />
+                    {/* <div className='card-title'>
+                      <h1>Spot Think</h1>  
+                    </div> */}
+                    </button>
+                </div>
+                <div className='card'>
+                <button className='openModal' onClick={() => {
+                        setOpen(true)
+                    }}><img src='img12.png' className='img' /></button> 
+                    {/* <div className='card-title'>
+                        <h1>Summer Club</h1>
+                    </div> */}
+                </div>
+                <div className='card'>
+                    <button className='openModal' onClick={() => {
+                        setOpen(true)
+                    }}> <img src='img12.png' className='img' /></button>
+                    {/* <div className='card-title'>
+                        <h1>Kids In Nature</h1>
+                    </div> */}
+                </div>
+                <div className='card'>
+                    <button className='openModal' onClick={() => {
+                        setOpen(true)
+                    }}> <img src='img12.png' className='img' /></button>
+                    {/* <div className='card-title'>
+                        <h1>Kids In Nature</h1>
+                    </div> */}
+                </div>
 
-        <h1 className='h1'> Most Import Programs</h1>
-<div className='main'>
-  
-    <div className='card' onClick={onOpen}>
-      <img src='img12.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}> Favorite</Button>
-            <Button variant='ghost'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-       {/* Card 2 */}
-       <div className='card' onClick={onOpen}>
-      <img src='img2.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}> Favorite</Button>
-            <Button variant='ghost'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-      <div className='card' onClick={onOpen}>
-      <img src='img3.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button variant='ghost' mr={3}> Favorite</Button>
-            <Button colorScheme='blue'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>      
-      <div className='card' onClick={onOpen}>
-      <img src='img4.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button variant='ghost' mr={3}> Favorite</Button>
-            <Button colorScheme='blue'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-      </div>
-      <h1 className='h1'> New Events</h1>
-      <div className='main'>
-
-    <div className='card' onClick={onOpen}>
-      <img src='img12.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}> Favorite</Button>
-            <Button variant='ghost'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-       {/* Card 2 */}
-       <div className='card' onClick={onOpen}>
-      <img src='img2.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}> Favorite</Button>
-            <Button variant='ghost'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-      <div className='card' onClick={onOpen}>
-      <img src='img3.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button variant='ghost' mr={3}> Favorite</Button>
-            <Button colorScheme='blue'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>      
-      <div className='card' onClick={onOpen}>
-      <img src='img4.png' className='img' /></div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay /> <ModalContent>
-          <ModalHeader><h1>Title for Cards here!</h1></ModalHeader><ModalCloseButton />
-          <ModalBody> <p>  the complete for body and descriptions about the program here...</p></ModalBody>
-          <ModalFooter>
-            <Button variant='ghost' mr={3}> Favorite</Button>
-            <Button colorScheme='blue'>Register</Button></ModalFooter>
-        </ModalContent>
-      </Modal>
-      </div>
+            </div>
+        </div>
 
     </div>
   )

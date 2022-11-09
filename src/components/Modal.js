@@ -18,7 +18,7 @@ function Modal({closeModal}) {
           </div>
           <div className="modalFooter">
             <button>Favorite</button>
-            <button>Order</button>
+            <button>Register</button>
           </div>
         </div>
       </div>
