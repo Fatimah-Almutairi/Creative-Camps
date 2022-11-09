@@ -37,7 +37,7 @@ li, a, .btn{
 .nav-link li a{
   padding: 10px ;
   transition: all 0.3s ease 0s;
-  background-color: #f9f9f9;
+  background-color: #FAF7F0;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -48,7 +48,7 @@ li, a, .btn{
 .btn {
   padding: 9px 25px;
   margin-left: 30px;
-  background-color: #f9f9f9;
+  background-color: #FAF7F0;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -72,6 +72,7 @@ li, a, .btn{
   justify-content: center;
   height: 70vh;
   align-items: center;
+  margin-top: 0;
 }
 .mainprog{
   display: flex;
@@ -87,31 +88,53 @@ li, a, .btn{
   grid-template-columns: repeat(3, 1fr);
 }
 .card{
-  height: 500px;
+  height: 400px;
   margin: 30px;
   box-shadow: 5px 5px 20px black;
   overflow: hidden;
+  margin-top: 0;
 }
 .img{
 height: 500px;
-width: 350px;
+width: 300px;
 border-radius: 3px;
 }
-.card-title{
+.h1{
+  margin-left: 30px;
+  font-size: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #611973;
+}
+
+.container{
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr   ;
+  gap: 2rem;
+  align-items: center;
+}
+.bootom{
+align-items: baseline;
+
+
+}
+/* .card-title{
   height: 50px;
   width: 350px;
-  /* padding: 6px; */
+  padding: 6px;
   box-sizing: border-box;
   position: absolute;
   bottom: 95px;
-  /* background: rgb(27, 27, 27, .5); */
-  /* color: #fff; */
+  background: rgb(27, 27, 27, .5); 
+  color: #fff;
 }
-.card-title h1{
-  /* margin: 10px; */
+ .card-title h1{
+  margin: 10px;
   font-size: 40px;
-  /* background; */
   color: #fff;
   background: rgb(27, 27, 27, .5);
 
-}
+} */
