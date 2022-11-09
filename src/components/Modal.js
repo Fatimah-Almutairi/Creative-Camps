@@ -2,12 +2,10 @@ import React from "react";
 import "./Modal.css"
 function Modal({closeModal}) {
   return (
-    <div>
-      {/* setOpen(true); */}
 
       <div className="modalBackground">
         <div className="modalContainer">
-          <button onClick={() => closeModal(false)}>X</button>
+          <button onClick={() => closeModal(false)} className='butto'>X</button>
           <div className="modalTitle">
             <h1>Title for Cards here!</h1>
           </div>
@@ -22,7 +20,7 @@ function Modal({closeModal}) {
           </div>
         </div>
       </div>
-    </div>
+  
   );
 }
 

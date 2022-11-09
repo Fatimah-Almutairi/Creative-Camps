@@ -5,7 +5,7 @@ import Modal from './Modal'
 
 function HomePage() {
 
-          const [openModal, setOpen] = useState(false);
+    const [openModal, setOpen] = useState(false);
 
   return (
     <div>
@@ -13,15 +13,16 @@ function HomePage() {
             <Box className='cont' height='80px'>
                 <h1>Help Children Dream With <br/><span>Creative Camps</span> </h1>
                 <p>"Help children dream and achieve theirs."</p></Box>
-            <Box  pr={0} mr={0}><Image src= 'main.png' pr={0} mr={0}/></Box>
+            <Box  pr={0} mr={0}><Image src= 'main11.png' pr={0} mr={0}/></Box>
         </SimpleGrid>
    <div className='main'>
-   {openModal && <Modal closeModal={setOpen} />}
+   <h1 className='h1'> Most Import Programs</h1>
             <div className='container'>
+            {openModal && <Modal closeModal={setOpen} />}
                 <div className='card'>
                     <button className='openModal' onClick={() => {
                         setOpen(true)
-                    }}><img src='img12.png' className='img' />
+                    }}><img src='img1.png' className='img' />
                     {/* <div className='card-title'>
                       <h1>Spot Think</h1>  
                     </div> */}
@@ -30,7 +31,8 @@ function HomePage() {
                 <div className='card'>
                 <button className='openModal' onClick={() => {
                         setOpen(true)
-                    }}><img src='img12.png' className='img' /></button> 
+                        
+                    }}><img src='img2.png' className='img' /></button> 
                     {/* <div className='card-title'>
                         <h1>Summer Club</h1>
                     </div> */}
@@ -38,7 +40,7 @@ function HomePage() {
                 <div className='card'>
                     <button className='openModal' onClick={() => {
                         setOpen(true)
-                    }}> <img src='img12.png' className='img' /></button>
+                    }}> <img src='img3.png' className='img' /></button>
                     {/* <div className='card-title'>
                         <h1>Kids In Nature</h1>
                     </div> */}
@@ -46,13 +48,51 @@ function HomePage() {
                 <div className='card'>
                     <button className='openModal' onClick={() => {
                         setOpen(true)
-                    }}> <img src='img12.png' className='img' /></button>
+                    }}> <img src='img4.png' className='img' /></button>
                     {/* <div className='card-title'>
                         <h1>Kids In Nature</h1>
                     </div> */}
                 </div>
 
             </div>
+            <h1 className='h1'> New Events</h1>
+            <div className='container'>
+            
+            <div className='card'>
+                <button className='openModal' onClick={() => {
+                    setOpen(true)
+                }}><img src='img5.png' className='img' />
+                {/* <div className='card-title'>
+                  <h1>Spot Think</h1>  
+                </div> */}
+                </button>
+            </div>
+            <div className='card'>
+            <button className='openModal' onClick={() => {
+                    setOpen(true)
+                }}><img src='img6.png' className='img' /></button> 
+                {/* <div className='card-title'>
+                    <h1>Summer Club</h1>
+                </div> */}
+            </div>
+            <div className='card'>
+                <button className='openModal' onClick={() => {
+                    setOpen(true)
+                }}> <img src='img7.png' className='img' /></button>
+                {/* <div className='card-title'>
+                    <h1>Kids In Nature</h1>
+                </div> */}
+            </div>
+            <div className='card'>
+                <button className='openModal' onClick={() => {
+                    setOpen(true)
+                }}> <img src='imgE1.png' className='img' /></button>
+                {/* <div className='card-title'>
+                    <h1>Kids In Nature</h1>
+                </div> */}
+            </div>
+
+        </div>
         </div>
 
     </div>
