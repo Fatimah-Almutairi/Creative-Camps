@@ -11,8 +11,8 @@ function HomePage() {
     <div>
         <SimpleGrid columns={2}  pr={0} mr={0}>
             <Box className='cont' height='80px'>
-                <h1>Help Children Dream With <br/><span>Creative Camps</span> </h1>
-                <p>"Help children dream and achieve theirs."</p></Box>
+            <h1> Encourage Kids To Dream <br /><span>Creative Camps</span></h1>
+          <p> "Sometimes, a dream can make children stronger to change that reality. So for this reason, it is necessary to encourage kids to dream." </p></Box>
             <Box  pr={0} mr={0}><Image src= 'main11.png' pr={0} mr={0}/></Box>
         </SimpleGrid>
    <div className='main'>
