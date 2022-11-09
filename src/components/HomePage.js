@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { SimpleGrid, Box, Image } from "@chakra-ui/react";
 
 // import Array from 'ProgramValue';
@@ -10,8 +11,14 @@ import {
 
 function HomePage() {
 
+    useEffect ( () => {
+        setTimeout(() => {
+            alert ('Welcome to Creative Camps .. ')
+        })
+    }, 500)
   return (
     <div>
+
       <SimpleGrid columns={2} pr={0} mr={0}>
         <Box className="cont" height="80px">
           <h1>

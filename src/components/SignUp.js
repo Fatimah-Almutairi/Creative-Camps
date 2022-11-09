@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 
 import {
   Text,
@@ -19,6 +20,32 @@ export default function SplitScreen() {
   const [showPassword, setShowPassword] = useState("");
   const [showEmail, setShowEmail] = useState("");
   const [showName, setShowName] = useState("");
+  const [get, setGet] = useState([] )
+
+
+        const [Name, setName] = useState()
+        const [email, setEmail] = useState()
+        const [password, setPassword] = useState()
+
+        const API = 'https://6362424b66f75177ea2a9980.mockapi.io/ToDoList';
+
+            const postData = () => {
+            axios.post(API , {
+                Name,
+                email,
+                password,
+            }).then( (res) =>{
+                console.log(res);
+            })
+        }
+
+        useEffect (() => {
+          axios.get('https://6362424b66f75177ea2a9980.mockapi.io/ToDoList').then ( (res) => {
+              console.log(res.data);
+              setGet(res.data);
+          })
+       }, []) 
+
 
   const navigate = useNavigate();
   const handleClick = (e) => {
@@ -41,7 +68,7 @@ export default function SplitScreen() {
       setShowEmail(e.target.value);
       setShowPassword(e.target.value);
 
-      navigate("/Home");
+      navigate("/HomePage");
     }
   };
 
@@ -56,6 +83,7 @@ export default function SplitScreen() {
               type="text"
               onChange={(e) => {
                 setShowName(e.target.value);
+                setName(e.target.value)
               }}
             />
           </FormControl>
@@ -66,6 +94,7 @@ export default function SplitScreen() {
               type="email"
               onChange={(e) => {
                 setShowEmail(e.target.value);
+                setEmail(e.target.value);
               }}
             />
           </FormControl>
@@ -75,6 +104,7 @@ export default function SplitScreen() {
               type="password"
               onChange={(e) => {
                 setShowPassword(e.target.value);
+                setPassword(e.target.value)
               }}
             />
           </FormControl>
@@ -89,8 +119,9 @@ export default function SplitScreen() {
             <button
               onClick={handleClick}
               className="btn"
-              colorScheme={"blue"}
-              variant={"solid"}
+              // colorScheme={"blue"}
+              // variant={"solid"}
+              
             >
               SignUp
             </button>
