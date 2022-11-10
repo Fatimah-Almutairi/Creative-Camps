@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Programs() {
+
+  const navigate = useNavigate();
+  const navi = () => {
+    navigate("/SignIn");
+  };
+
   return (
     <div>
       <div className="containerP">
@@ -9,13 +16,11 @@ function Programs() {
             <img src="img1.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Think Spot Center</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            The Think Spot Center announces the start of the summer program for children from 4 to 10 years old for three weeks
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
         <div className="cardP">
@@ -23,13 +28,11 @@ function Programs() {
             <img src="img22.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Cloud Fun Center</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            Registration started at the Cloud Fun Center for the Summer Club Program for the Development of Children's Skills during the Summer Vacation
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
         <div className="cardP">
@@ -37,13 +40,11 @@ function Programs() {
             <img src="img33.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Kids In Nature</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            What is better than trying your kids to spend a week in nature? Register now for the children's journey in nature from 7/3 to 7/7 for the ages of 7 to 12
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
         <div className="cardP">
@@ -51,13 +52,11 @@ function Programs() {
             <img src="img7.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Futures Heroes Academy</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            Futures Heroes Academy Center dedicated to self-defense games for children announces a training course for a month during the month of August
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
         <div className="cardP">
@@ -65,27 +64,23 @@ function Programs() {
             <img src="img6.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Our Summer With Lights</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            The Lighting Center announces the summer program for many activities including space, small merchant and a two-week world tour
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
         <div className="cardP">
           <div className="imgBx">
-            <img src="img1.png"></img>
+            <img src="img8.png"></img>
           </div>
           <div className="contentP">
-            <h3>Arts and Crafts Party</h3>
+            <h3>Space With Childhood</h3>
             <p>
-              It gives kids a sense of achievement and allow them to take pride
-              in their work which builds confidence. Making art is a great, safe
-              way to discover that it's okay to make mistakes and that getting
-              things 'wrong' can lead you to a whole new idea
+            Announces the summer program and the experiment in it the world of space and scientific and technical experiments with children for a month
             </p>
+            <button className="btn1" onClick={navi}>Register Now</button>
           </div>
         </div>
       </div>

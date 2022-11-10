@@ -62,7 +62,7 @@ export default function SplitScreen() {
               align={"start"}
               justify={"space-between"}
             >
-              <Checkbox>Remember me</Checkbox>
+              <Checkbox onClick={'checked'}>Remember me</Checkbox>
               <Link color={"#611973"}>Forgot password?</Link>
             </Stack>
             <button
@@ -83,7 +83,7 @@ export default function SplitScreen() {
         </Stack>
       </Flex>
       <Flex flex={2}>
-        <Image alt={"Login Image"} objectFit={"cover"} src={"main.png"} />
+        <Image alt={"Login Image"} objectFit={"cover"} src={"main11.png"} />
       </Flex>
     </Stack>
   );

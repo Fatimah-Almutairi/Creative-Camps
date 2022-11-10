@@ -253,7 +253,7 @@ transition:  all 0.4s ease-in-out 0s; */
 .containerP .cardP {
   position: relative;
   max-width: 400px;
-  height: 315px;
+  height: 380px;
   background: #FAF7F0;
   margin: 70px 10px;
   padding: 20px 15px;
@@ -263,13 +263,13 @@ transition:  all 0.4s ease-in-out 0s; */
   transition: 0.3s ease-in-out;
 }
 .containerP .cardP:hover {
-  height: 420px;
+  height: 520px;
 }
 
 .containerP .cardP .imgBx {
   position: relative;
   width: 360px;
-  height: 360px;
+  height: 460px;
   top: -60px;
   left: 10px;
   z-index: 1;
@@ -282,6 +282,7 @@ transition:  all 0.4s ease-in-out 0s; */
 }
 .containerP .cardP .contentP {
   position: relative;
+  height: 1500px;
   /* margin-top: -140px; */
   /* padding: 10px 15px; */
   text-align: center;
@@ -289,13 +290,30 @@ transition:  all 0.4s ease-in-out 0s; */
   visibility: hidden;
   opacity: 0;
   transition: 0, 3 ease-in-out;
+  align-items: center;
 }
 .containerP .cardP:hover .contentP {
   visibility: visible;
   opacity: 1;
   margin-top: -50px;
   transition-delay: 0.3s;
-  height: 400px;
+  height: 500px;
+}
+
+.btn1 {
+  align-items: center;
+  margin: 10px;
+  padding: 9px 25px;
+  margin-left: 30px;
+  background-color: #FAF7F0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: #ffd445 solid 1.5px;
+}
+.btn1:hover{
+  background-color: #ffd445;
 }
 /* .card-title{
   height: 50px;
@@ -376,4 +394,49 @@ transition:  all 0.4s ease-in-out 0s; */
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
+}
+.about {
+  width: 100%;
+  padding: 78px 0px;
+  /* background-color: #f9f9f9; */
+}
+.about img {
+  height: auto;
+  width: 420px;
+}
+.about-text {
+  width: 950px;
+}
+.main {
+  width: 1130;
+  max-width: 95%;
+  margin: 0 auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.about-text h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.about-text p {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.about-text button {
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px;
+  border-radius: 30px;
+  transition: 0.4s;
+  background-color: #ffd445;
+}
+.about-text button:hover {
+  background: transparent;
+  border: 2px solid #611973;
+  cursor: pointer;
 }

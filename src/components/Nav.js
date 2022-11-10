@@ -11,6 +11,7 @@ function Nav() {
         <nav>
             <ul className='nav-link'>
                 {/* <h2>Hello</h2> */}
+                <li><Link to='/HomePage'>Home Page</Link></li>
                 <li><Link to='/Programs'>Programs</Link></li>
                 <li><Link to='/Events'>Events</Link></li>
                 <li><Link to="/About">About</Link></li>

@@ -135,7 +135,7 @@ export default function SplitScreen() {
         </Stack>
       </Flex>
       <Flex flex={2}>
-        <Image alt={"Login Image"} objectFit={"cover"} src={"main.png"} />
+        <Image alt={"Login Image"} objectFit={"cover"} src={"main11.png"} />
       </Flex>
     </Stack>
   );

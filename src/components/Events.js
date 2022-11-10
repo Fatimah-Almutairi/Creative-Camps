@@ -32,7 +32,7 @@ function Events() {
 
         <div className="card1">
           <div className="imgBx">
-            <img src="https://i.pinimg.com/564x/69/2e/b5/692eb572b521c17576445d280734890b.jpg"></img>
+            <img src="img5.png"></img>
           </div>
           <div className="content1">
             <h3> Flowers Arrangements</h3>
@@ -44,7 +44,7 @@ function Events() {
         </div>
         <div className="card1">
           <div className="imgBx">
-            <img src="https://i.pinimg.com/564x/8d/1e/3d/8d1e3d8fb7f0422e00a4dc57521763f8.jpg"></img>
+            <img src="img9.png"></img>
           </div>
           <div className="content1">
             <h3> Gymnastics Classes</h3>
@@ -56,7 +56,7 @@ function Events() {
         </div>
         <div className="card1">
           <div className="imgBx">
-            <img src="https://i.pinimg.com/564x/d1/3b/cf/d13bcf9ff5f3cb9723f18b73ab7d17ff.jpg"></img>
+            <img src="img10.png"></img>
           </div>
           <div className="content1">
             <h3> ZOO Day</h3>
@@ -71,7 +71,7 @@ function Events() {
         </div>
         <div className="card1">
           <div className="imgBx">
-            <img src="https://i.pinimg.com/564x/b1/f2/05/b1f20536b6a4c2f344738c496c018330.jpg"></img>
+            <img src="imghero.png"></img>
           </div>
           <div className="content1">
             <h3> Craft Day </h3>

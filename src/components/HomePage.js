@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { SimpleGrid, Box, Image } from "@chakra-ui/react";
+import Contact from "./Contact";
 
 // import Array from 'ProgramValue';
 import {
@@ -16,6 +18,12 @@ function HomePage() {
             alert ('Welcome to Creative Camps .. ')
         })
     }, 500)
+    
+    const navigate = useNavigate();
+    const navi = () => {
+      navigate("/SignIn");
+    };
+
   return (
     <div>
 
@@ -45,13 +53,11 @@ function HomePage() {
               <img src="img1.png"></img>
             </div>
             <div className="contentP">
-              <h3>Arts and Crafts Party</h3>
+              <h3>Spot Think</h3>
               <p>
-                It gives kids a sense of achievement and allow them to take
-                pride in their work which builds confidence. Making art is a
-                great, safe way to discover that it's okay to make mistakes and
-                that getting things 'wrong' can lead you to a whole new idea
+              The Think Spot Center announces the start of the summer program for children from 4 to 10 years old for three weeks
               </p>
+              <button className="btn1" onClick={navi}>Register Now</button>
             </div>
           </div>
           <div className="cardP">
@@ -59,13 +65,11 @@ function HomePage() {
               <img src="img22.png"></img>
             </div>
             <div className="contentP">
-              <h3>Arts and Crafts Party</h3>
+              <h3>Cloud Fun Center</h3>
               <p>
-                It gives kids a sense of achievement and allow them to take
-                pride in their work which builds confidence. Making art is a
-                great, safe way to discover that it's okay to make mistakes and
-                that getting things 'wrong' can lead you to a whole new idea
-              </p>
+              Registration started at the Cloud Fun Center for the Summer Club Program for the Development of Children's Skills during the Summer Vacation
+              </p>              
+              <button className="btn1" onClick={navi}>Register Now</button>
             </div>
           </div>
           <div className="cardP">
@@ -73,13 +77,11 @@ function HomePage() {
               <img src="img33.png"></img>
             </div>
             <div className="contentP">
-              <h3>Arts and Crafts Party</h3>
+              <h3>Kids In Nature</h3>
               <p>
-                It gives kids a sense of achievement and allow them to take
-                pride in their work which builds confidence. Making art is a
-                great, safe way to discover that it's okay to make mistakes and
-                that getting things 'wrong' can lead you to a whole new idea
+              What is better than trying your kids to spend a week in nature? Register now for the children's journey in nature from 7/3 to 7/7 for the ages of 7 to 12
               </p>
+              <button className="btn1" onClick={navi}>Register Now</button>
             </div>
           </div>
         </div>
@@ -134,7 +136,7 @@ function HomePage() {
           <div className="con2">
             <FormLabel>Message</FormLabel>
             <Textarea placeholder="Enter Your Message Here..." width={500} />
-            <button className="btn">Submit</button>
+            <button className="btn" onClick={Contact}>Submit</button>
           </div>
         </div>
       </div>
